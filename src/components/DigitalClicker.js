@@ -1,17 +1,24 @@
 import React from 'react';
 
 class DigitalClicker extends React.Component {
-  constructor(props){
-    super(props){
+  constructor() {
+    super();
+
+    this.state = {
       timesClicked: 0;
-    }
+    };
+  }
 
-    render() {
-      return(
-        inital state:
+  handleClick = () => {
+    this.setState(prevState => ({
+      timesClicked: prevState.timesClicked+1
+    }))
+  }
 
-      )
-    }
+  render(){
+    return(
+      <button onClick={this.handleClick}>{this.state.timesClicked}</button>
+    );
   }
 }
 
