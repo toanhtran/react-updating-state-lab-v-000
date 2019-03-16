@@ -5,5 +5,16 @@ class DigitalClicker extends React.Component {
     super(props){
       timesClicked: 0;
     }
+
+    render() {
+      return(
+        inital state:
+        
+      )
+    }
   }
 }
+
+export default DigitalClicker;
+
+
